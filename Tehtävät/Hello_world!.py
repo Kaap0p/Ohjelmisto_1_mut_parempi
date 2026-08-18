@@ -28,5 +28,3 @@ if hello_or_bye.lower() in ["hello", "bye"]:
         print(bye_ascii)
 else:
     print("Error bitch!")
-
-
