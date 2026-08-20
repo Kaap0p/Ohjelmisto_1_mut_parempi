@@ -27,7 +27,7 @@ if function.lower() == "scan":
 
         S.settimeout(0.5)
 
-        status = S.connect_ex(("127.0.01", port))
+        status = S.connect_ex(("127.0.0.1", port))
 
         if status == 0:
             print(f'Port {port} is open')
@@ -58,7 +58,7 @@ if function == "scan":
 
         S.close()
 
-elif function == "SSH":
+elif function.upper() == "SSH":
     print("\nStarting local SSH-like command executor. ")
     print("Type Exit to quit.")
     print("Extra commands:Banner <ip> <port>\n")
