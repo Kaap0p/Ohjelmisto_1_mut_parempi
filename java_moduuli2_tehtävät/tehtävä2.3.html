@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Osallistujat</title>
+  </head>
+  <body>
+    <script>
+        const koira1 = prompt("Anna koirasi nimi: ");
+        const koira2 = prompt("Anna koirasi nimi: ");
+        const koira3 = prompt("Anna koirasi nimi: ");
+        const koira4 = prompt("Anna koirasi nimi: ");
+        const koira5 = prompt("Anna koirasi nimi: ");
+        const koira6 = prompt("Anna koirasi nimi: ");
+
+        let koirat = [koira1,koira2,koira3,koira4,koira5,koira6]
+        koirat.sort().reverse();
+
+        document.write("<ul>");
+
+        for (let i = 0; i < koirat.length; i++) {
+            document.write("<li>" + koirat [i] + "</li>");
+        }
+        document.write("</ul>");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luvut</title>
+  </head>
+  <body>
+    <script>
+        let luvut = [];
+        let luku;
+
+        do {
+            luku = Number(prompt("Anna luku(0 lopettaa): "));
+            if(luku !==0); {
+                luvut.push(luku);
+            }
+        } while (luku!==0);
+        luvut.sort(function(a,b) {
+            return b - a;
+        });
+        for (let i =0; i < luvut.length; i++) {
+            console.log(luvut[i]);
+        }
+    </script>
+  </body>
+</html>

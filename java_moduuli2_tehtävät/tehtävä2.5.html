@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lukuja</title>
+  </head>
+  <body>
+    <script>
+        let luvut = []
+        let luku;
+
+        while(true) {
+            luku = Number(prompt("Anna luku: "));
+
+            if (luvut.includes(luku)) {
+                alert("Luku on jo annettu.");
+                break;
+            }
+        luvut.push(luku);
+        }
+        luvut.sort(function(a, b) {
+            return a - b;
+        });
+        for (let i = 0; i < luvut.length; i++) {
+            console.log(luvut[i]);
+        }
+    </script>
+</body>
+</html>

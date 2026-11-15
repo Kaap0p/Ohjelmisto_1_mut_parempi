@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Osallistujat</title>
+  </head>
+  <body>
+    <script>
+        let osallistujat = []
+        let maara = Number(prompt("Kuinka monta osallistujaa on?: "));
+
+        for (let i = 0; i < maara; i++) {
+            let nimi = prompt("Anna osallistujan nimi:");
+            osallistujat.push(nimi);
+        }
+        osallistujat.sort();
+
+        document.write("</ol>");
+
+        for (let i = 0; i < osallistujat.length; i++) {
+        document.write("<li>" + osallistujat[i] + "</li>");
+        }
+        document.write("</ol>");
+ </script>
+</body>
+</html>
